@@ -1,0 +1,13 @@
+<resources>
+    <string name="nome">PsychoDigital</string>
+    <string name="entar">Login</string>
+    <string name="app_name">NapI</string>
+    <string name="frase">Welcome !!</string>
+    <string name="imagem00">cerebro digital</string>
+    <string name="strCadastro">Cadastro</string>
+    <string name="strOsTranstornos">Os Transtornos</string>
+    <string name="strSos">SOS</string>
+    <string name="strDicas">Dicas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

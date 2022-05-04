@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="307dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="PsychoDigital"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/teal_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_700"
+        android:onClick="clicou"
+        android:text="@string/entar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        app:srcCompat="@drawable/imagem00" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Seu e-mail"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/nome"
+        app:layout_constraintStart_toStartOf="@+id/nome"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Sua senha"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:onClick="clicouCadastro"
+        android:text="Usuário Novo ? Clique Aqui."
+        app:layout_constraintEnd_toEndOf="@+id/botao"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/botao"
+        app:layout_constraintTop_toBottomOf="@+id/botao" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
